@@ -1,0 +1,128 @@
+
+/* section 1 */
+
+#posterheading{
+    font-size: 4rem;
+    width: fit-content;
+}
+.banner_para{
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 2rem 1rem 1rem 0;
+    margin: 0;
+    z-index: 1;
+}
+.boder{
+    border-bottom:  4px solid yellow;
+    border-radius: 4px;
+    width: 0px;
+    opacity: 1;
+    animation-name: yellowborder;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-delay: .3s;
+}
+@keyframes yellowborder{
+    0%{
+       width: 0px;
+    }
+    
+    100%
+    {
+      width: 100%;
+    }
+}
+.customerimg{
+    width: 100%;
+    height: 700px;
+    filter: brightness(40%);
+}
+
+.customsec-1{
+    position: absolute;  
+    top: 20rem;
+    left: 6rem;
+    color: white;
+    z-index: 1;
+}
+
+/* section 2 */
+
+
+.fewwords{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brand_coverage{
+    
+    font-family: 'Texturina', serif;
+    line-height: .6rem;
+    font-size: 34px;
+    font-weight: 300px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    letter-spacing: 0.03em;
+
+}
+.img{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    
+}
+.user_manual_pic{
+    width: 100%;
+    height: 100%;
+    transform: translateX(30%);
+}
+.subbox{
+    border: 4px solid #35AF58;
+    margin: 2rem 25rem;
+    border-radius: 1rem;
+}
+.heading
+{
+    text-align: left;
+    font-weight: 500;
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+.list
+{
+    padding: .5rem;
+    font-weight: bold;
+    text-align: left;
+}
+    
+
+@media (max-width:900px) {
+    #posterheading{
+        font-size: 2rem;
+    }
+    .banner_para{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+    .customsec-1{
+        top: 11rem;
+        left: 2rem;
+    }
+    .customerimg{
+        height: 300px;
+    }
+    .subbox{
+        margin: 2rem 1rem;
+    }
+    
+}
+
+@media (max-width:1200px){
+    .subbox{
+        margin: 2rem 2rem;
+    }
+}

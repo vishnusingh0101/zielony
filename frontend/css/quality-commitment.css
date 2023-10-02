@@ -1,0 +1,268 @@
+body{
+    background-color: aliceblue;
+}
+.head-qc{
+    position: absolute;
+    left: 3rem;
+    top: 14rem;
+    padding: 10px;
+    color: rgb(215, 215, 215);
+    font-size: auto;
+    font-family: 'Rufina', serif ;
+    width: 80%;
+}
+.line{
+    position: absolute;
+    top: 17rem;
+    color: rgba(0, 160, 45, 0.715);
+    width: 80%;
+}
+.para-qc{
+    position: absolute;
+    left: 3rem;
+    top: 18rem;
+    padding: 0;
+    font-size: auto;
+    color: #cbcbcb;
+    width: 80%;
+    text-align: left;
+    margin-top: 50px;
+}
+.img-qc{
+    height: 680px;
+    width: 100%;
+}
+.qc{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    background-image:
+            linear-gradient(to bottom,
+              rgba(8, 82, 0, 0.211),
+              rgb(0, 0, 0));
+}
+
+
+.qc-li{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+#qualityob {
+	--h: 212deg;
+	--l: 43%;
+	--brandColor: hsl(var(--h), 71%, var(--l));
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+.qh{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: 'Rufina', serif;
+    font-size: 3rem;
+}
+
+.qobol {
+	list-style: none;
+	counter-reset: list;
+	padding: 0 1rem;
+}
+
+.qonli {
+	--stop: calc(100% / var(--length) * var(--i));
+	--l: 62%;
+	--l2: 88%;
+	--h: calc((var(--i) - 1) * (180 / var(--length)));
+	--c1: hsl(var(--h), 71%, var(--l));
+	--c2: hsl(var(--h), 71%, var(--l2));
+	
+	position: relative;
+	counter-increment: list;
+	max-width: 45rem;
+	margin: 1.6rem auto;
+	padding: 1.2rem 1rem 1rem;
+	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+	border-radius: 0.25rem;
+	overflow: hidden;
+	background-color: white;
+}
+
+.qonli::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0.7rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+.qobh {
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: rgb(70 70 70);
+    font-size:1.1em;
+    
+}
+
+.qobh::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	content: counter(list);
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: var(--c1);
+	color: white;
+    
+}
+
+@media (min-width: 40em) {
+	.qonli {
+		margin: 3rem auto;
+		padding: 2.2rem 2rem 0rem;
+	}
+	
+	.qobh {
+		font-size: 1.5rem;
+		margin: 0 0 2rem;
+	}
+	
+	.qobh::before {
+		margin-right: 1.5rem;
+	}
+}
+
+
+
+
+#dg{
+    background-color:#f3f4f6;
+}
+.p{
+    text-align: center;
+    
+    height:29em;
+    word-wrap: break-word;
+    color: #fff;
+    padding:0 !important;
+}
+.dhead{
+    font-size:2.6em;
+    margin-top: .7em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+p{
+    font-size: 1.2em;
+    line-height:1.55;
+    text-align: left;
+     color: #fff;
+  padding:6%;
+  font-family: Montserrat;
+}
+.container{
+    padding: 10em 0 10em 0 !important;
+}
+
+
+
+
+
+/* responsive */
+
+@media (min-width:994px) {
+    .qc{
+        height: 760px;
+    }    
+    .img-qc{
+        width: 100%;
+    }
+}
+@media (max-width:993px) {
+    .head-qc{
+        top: 3rem;
+    }
+    .line{
+        top: 5rem;
+    }
+    .para-qc{
+        top: 6rem;
+    }
+    .img-qc{
+        height: 20rem;
+        width: 100%;
+    }
+    .qc{
+        margin-top: 100px !important;
+        height: 20rem;
+    }
+}
+@media (max-width:700px) {
+    p{
+        font-size: .47em;
+        line-height: 1.3;
+    }
+    .s{
+        display: none;
+        
+    }
+    .p{
+        height:12em;
+    
+    }
+    .container{
+        padding: 0 !important;
+    }
+    .dhead{
+        font-size: 1.35em;
+        margin-top: 0.5em;
+    }
+    .ldg{
+margin-left: 4%;
+    }
+}
+@media screen and (min-width: 700px) and (max-width:1010px) {
+    p{
+        font-size: .7em;
+        line-height: 1.3;
+    }
+    
+    .p{
+        height:18em;
+    }
+    .dhead{
+        font-size: 1.6em;
+    }
+    .container{
+        padding: 7em 0 7em 0 !important;
+    }
+}
+@media (max-width:400px) {
+    .line{
+        display: none;
+    }
+}
+
+
+
+

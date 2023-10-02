@@ -1,0 +1,223 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+/* section 1 */
+ :root {
+    --tree: #35AF58; /* Declare a CSS variable named --main-color and set it to the desired color */
+  }
+  
+#posterheading{
+    font-size: 4rem;
+    width: fit-content;
+}
+.banner_para{
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 2rem 1rem 1rem 0;
+    margin: 0;
+}
+.boder{
+    border-bottom:  4px solid yellow;
+    border-radius: 4px;
+    width: 0px;
+    opacity: 1;
+    animation-name: yellowborder;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-delay: .3s;
+}
+@keyframes yellowborder{
+    0%{
+       width: 0px;
+    }
+    
+    100%
+    {
+      width: 100%;
+    }
+}
+.customerimg{
+    width: 100vw;
+    height: 800px;
+    filter: brightness(40%);
+}
+
+.customsec-1{
+    position: absolute;  
+    top: 400px;
+    left: 6rem;
+    color: white;
+    z-index: 1;
+}
+
+
+
+/* sec-2 */
+
+.container3{
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-s{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.card_img img{
+    width: 58vw;
+    border-radius: 1rem;
+}
+.card_img_content{
+    font-family: 'Rubik', sans-serif;
+}
+.card_image_content_heading
+{
+    font-size: 2.3rem;    
+    padding: 2rem 1rem 1rem;
+    color: #046b07;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+#para1{
+    text-align: left;
+    font-weight: 400;
+    padding: 0 1rem;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;       
+    font-size: 17px;
+    line-height: 1.3rem;
+    font-weight: bold;
+}
+#para2{
+    padding-top: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.card_img_content_sub ul li::before{
+    content: "\2022 \00A0 ";
+    color: green;
+    font-size: 50px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: -33px;
+    vertical-align: middle;
+}
+.space{
+    padding-bottom: 10px;
+}
+.ul{
+    padding-top: 20px;
+}
+.li_style{
+    padding-top: 15px;
+} 
+
+.indiancustomer{
+    padding-top: 20px;
+    gap: 15px;
+}
+.indiancustomer p{
+    font-size: 1.5rem;
+}
+.green_font{
+    color: #35AF58;
+   
+    padding-right: 5px;
+    
+    padding-top: 9px;
+}
+#para_style{
+    line-height: 2.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+ }
+ #para_style2{
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2rem;
+ }
+.complaint_cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 80px;
+    cursor: pointer;
+}
+.complaint_options_cards{
+    /* text-decoration: underline white; */
+    color: #35AF58;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #35AF58;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    padding: 20px 35px;
+    border-radius: 5px;
+}
+.complaint_options_cards:hover{
+   background-color: #35AF58;
+   color: #f8f8ff;
+    
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form_content h4{
+    margin-top: 10px;
+    padding-inline-start: 5px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--tree);
+}
+.form_content p {
+    padding-inline-start: 5px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.form_fill input{
+    border: 2px solid green;
+    border-radius: 5px;    
+    margin: 10px auto;
+    transform: translateX(0%);
+}
+.btn{
+    margin-top: 8px;
+    transform: translateX(0%);
+    color: white;
+}
+
+
+@media (max-width:900px) {
+    #posterheading{
+        font-size: 2rem;
+    }
+    .banner_para{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+    .customsec-1{
+        top: 11rem;
+        left: 2rem;
+    }
+    
+    .customerimg{
+        height: 300px;
+    }
+    .container3{
+        padding: 3rem 1rem;
+    }
+} 

@@ -1,0 +1,67 @@
+
+.customerimg{
+    width: 100vw;
+    height: 500px;
+  }
+  
+  .tc-head{
+    color: #35AF58;
+    font-weight: bolder;
+    margin: 2rem;
+  }
+  
+  ol {
+      list-style: none;
+      counter-reset: steps;
+    }
+    ol li {
+      counter-increment: steps;
+      color: #35AF58;
+      font-size: x-large;
+      font-weight: bolder;
+      padding-top: 3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      
+    }
+    ol li::before {
+      display: inline-flex;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      content: counter(steps);
+      margin: .5rem;
+      border-radius: 50%;
+      border: 2px solid #35AF58;
+    }
+    
+    p{
+      font-size: 15px;
+      padding: 0 3rem;
+      text-align: left;
+      letter-spacing: .8px;
+      line-height: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+  
+  
+  
+  @media (max-width:900px) {
+      
+      .customerimg{
+          height: 300px;
+      }
+      ol{
+        padding: 0;
+      }
+      ol li{
+        font-size: medium;
+        padding-top: 1rem;
+      }
+      ol li::before{
+        margin: .5rem;
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+  } 

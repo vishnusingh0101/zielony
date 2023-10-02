@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Notification */
+.notification {
+    width: auto;
+    min-width: 150px;
+    max-width: 80%;
+    height: auto;
+    background-color: green;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 84px;
+    right: 0; 
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    z-index: 9999;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* To remove arrows from number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+
+/* *************************************************** */
