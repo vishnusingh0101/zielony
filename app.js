@@ -12,7 +12,43 @@ const errorControl = require('./controller/error');
 const contactRoute = require('./routes/contactroute');
 
 app.use(cors());
-app.use(helmet());
+app.use(
+    helmet({
+        contentSecurityPolicy: {
+            directives: {
+                defaultSrc: ["'self'"],
+                baseUri: ["'self'"],
+                fontSrc: ["'self'", "https:", "data:"],
+                formAction: ["'self'"],
+                frameAncestors: ["'self'"],
+                imgSrc: ["'self'", "data:", "https://d2tkmgv9tsam7v.cloudfront.net"],
+                objectSrc: ["'none'"],
+                scriptSrc: [
+                    "'self'", 
+                    "https://kit.fontawesome.com", 
+                    "https://unpkg.com",  
+                    "'sha256-RtKLN/h8jiE5wcWV5HwkiiEEAFvM9rJ264+yZw8Vqgo='" 
+                ],
+                scriptSrcElem: [
+                    "'self'", 
+                    "https://kit.fontawesome.com", 
+                    "https://unpkg.com",
+                    "'sha256-RtKLN/h8jiE5wcWV5HwkiiEEAFvM9rJ264+yZw8Vqgo='" 
+                ],
+                scriptSrcAttr: ["'none'"],
+                styleSrc: [
+                    "'self'", 
+                    "https:", 
+                    "'unsafe-inline'", 
+                    "https://ka-f.fontawesome.com"
+                ],
+                connectSrc: ["'self'", "https://ka-f.fontawesome.com"],
+                upgradeInsecureRequests: [],
+            },
+        },
+    })
+);
+
 app.use(compression());
 app.use(bodyParser.json());
 
