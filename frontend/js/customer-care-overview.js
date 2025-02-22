@@ -12,7 +12,7 @@ async function senddata(event) {
         custname: custname.value,
         mobile:    mobile.value
     }
-    const exp = await axios.post('https://zielonyapc.com/user/customercare', userdata );
+    const exp = await axios.post('https://www.zielonyapc.com/user/customercare', userdata );
     console.log(exp.data.status);
     if(exp.data.status === true) {
         showstatus();

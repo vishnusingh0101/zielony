@@ -25,7 +25,7 @@ async function senddata(event) {
         message: message.value,
     }
     console.log(userdata);
-    const exp = await axios.post('https://zielonyapc.com/user/addSurvey', userdata);
+    const exp = await axios.post('https://www.zielonyapc.com/user/addSurvey', userdata);
     console.log(exp.data.status);
     if (exp.data.status === true) {
         showstatus();

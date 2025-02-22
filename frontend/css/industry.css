@@ -95,6 +95,25 @@
   width: 15vw !important;
 }
 
+.previews img{
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+}
+
+.img-container {
+  margin: 1.5rem;
+  width: 8rem;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.feature-img{
+  display: flex;
+  justify-content: center;
+ max-width: 130%;
+}
+
 
 
 table {
@@ -206,6 +225,60 @@ p{
 }
 
 
+.sector-card {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sector-card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/*.sector-card:hover img {
+  transform: scale(1.05);
+}*/
+
+.sector-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+}
+
+.sector-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sector-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.sector-card:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.intro-text {
+  color: #004450;
+}
+
+
 
 @media (max-width:990px) {
   h1.head-1{
@@ -266,7 +339,7 @@ p{
     display: block;
   }
 }
-@media (max-width:420px) {
+@media (max-width:600px) {
   .previews{
     display: none;
   }

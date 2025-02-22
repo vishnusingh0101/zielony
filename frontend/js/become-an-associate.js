@@ -36,8 +36,7 @@ async function senddata(event) {
         message: message.value,
     }
     console.log(userdata);
-    const exp = await axios.post('https://zielonyapc.com/user/associatedetail', userdata);
-    console.log(exp.data.status);
+    const exp = await axios.post('https://www.zielonyapc.com/user/associatedetail', userdata);
     if (exp.data.status === true) {
         showstatus();
         console.log('got hit');

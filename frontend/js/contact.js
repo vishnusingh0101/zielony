@@ -21,7 +21,7 @@ async function senddata(event) {
         pincode:   pincode.value,
         message:   message.value,
     }
-    const exp = await axios.post('https://zielonyapc.com/user/addContact', userdata );
+    const exp = await axios.post('https://www.zielonyapc.com/user/addContact', userdata );
     console.log(exp.data.status);
     if(exp.data.status === true) {
         showstatus();

@@ -49,6 +49,16 @@ body{
     text-decoration: none;
 }
 
+.contact-menu{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.mobile-ico{
+    padding-bottom: 1rem;
+}
+
 .contact-ico {
     margin: 10px;
     height: 25px;
@@ -219,7 +229,7 @@ body{
 }
 
 .slide-btn {
-    width: 100px;
+    width: 30px;
 }
 
 .carousel-dark .carousel-indicators [data-bs-target]{
@@ -234,6 +244,7 @@ body{
 }
 .b-4, .b-5{
     width: 15px;
+    background-color: #000000;
 }
 
 /* PRODUCT RANGE */
@@ -270,42 +281,42 @@ body{
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
-    background-image: url("../images/industry.jpg")
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/industry.jpg")
 }
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-    background-image: url("../images/smart.jpg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/smart.jpg");
 }
 
 .card--3 .card__img,
 .card--3 .card__img--hover {
-    background-image: url("../images/domestic.jpg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/domestic.jpg");
 }
 
 .card--4 .card__img,
 .card--4 .card__img--hover {
-    background-image: url("../images/tower.jpg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/tower.jpg");
 }
 
 .card--5 .card__img,
 .card--5 .card__img--hover {
-    background-image: url("../images/hospital.jpeg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/hospital.jpeg");
 }
 
 .card--6 .card__img,
 .card--6 .card__img--hover {
-    background-image: url("../images/metro.jpg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/metro.jpg");
 }
 
 .card--7 .card__img,
 .card--7 .card__img--hover {
-    background-image: url("../images/commercial.jpg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/commercial.jpg");
 }
 
 .card--8 .card__img,
 .card--8 .card__img--hover {
-    background-image: url("../images/mall.jpg");
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/mall.jpg");
 }
 
 .card__like {
@@ -445,6 +456,9 @@ body{
     background-color: #fafafa;
     text-align: center;
     padding-top: 4rem;
+}
+#Products{
+    padding-top: 4rem; 
 }
 
 .choose-box {
