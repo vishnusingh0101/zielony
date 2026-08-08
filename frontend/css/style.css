@@ -77,7 +77,7 @@ body{
 }
 
 .logo {
-    height: 70px;
+    height: 80px;
     width: 227px;
     background-color: white;
     border-radius: 10px;
@@ -246,6 +246,77 @@ body{
     width: 15px;
     background-color: #000000;
 }
+/* Carousel prev/next controls — clean, modern look */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  opacity: 0.85;
+  transition: background-color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+
+.carousel-control-prev {
+  left: 24px;
+}
+
+.carousel-control-next {
+  right: 24px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.08);
+  opacity: 1;
+}
+
+.carousel-control-prev:focus-visible,
+.carousel-control-next:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+/* Optional: hide controls until the carousel is hovered, for a cleaner idle look */
+/*
+.carousel:not(:hover) .carousel-control-prev,
+.carousel:not(:hover) .carousel-control-next {
+  opacity: 0;
+}
+*/
+
+/* Responsive: shrink on small screens */
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 44px;
+    height: 44px;
+  }
+
+  .carousel-control-prev {
+    left: 12px;
+  }
+
+  .carousel-control-next {
+    right: 12px;
+  }
+}
 
 /* PRODUCT RANGE */
 
@@ -317,6 +388,11 @@ body{
 .card--8 .card__img,
 .card--8 .card__img--hover {
     background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/mall.jpg");
+}
+
+.card--9 .card__img,
+.card--9 .card__img--hover {
+    background-image: url("https://d2tkmgv9tsam7v.cloudfront.net/Car_AP.jpg");
 }
 
 .card__like {
@@ -568,6 +644,65 @@ p {
     top: 0.5rem;
 }
 
+/* LOGOS */
+
+/* Logos / recognition strip */
+
+#logos {
+  padding: 30px 10px;
+}
+
+.logohead {
+  justify-content: center;
+    padding: 1rem 0 2rem;
+    color: #4b4c4b;
+    font-size: 3.5em;
+    font-family: 'Rufina', serif;
+}
+
+.logos-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 180px;
+}
+
+.logo-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+@media (max-width: 768px) {
+  .logos-row {
+    gap: 24px 32px;
+  }
+
+  .logo-item {
+    height: 56px;
+    width: 100px;
+  }
+}
+
 
 /* NEWS */
 
@@ -642,7 +777,7 @@ hr {
 /* OUR MISSION */
 
 #ourmission {
-    margin: 5rem 0 15rem;
+    margin: 5rem 0 10rem;
 }
 
 .mission-on {
@@ -702,6 +837,61 @@ hr {
     top: 12rem;
 
 
+}
+
+/* Available At — brand logos strip */
+
+#available-at {
+  padding: 5px 5px;
+  font-family: 'Rufina', serif;
+}
+
+.availablehead {
+  justify-content: center;
+    padding: 5rem 0 2rem;
+    color: #4b4c4b;
+    font-size: 3.5em;
+    font-family: 'Rufina', serif;
+}
+
+.available-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 136px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.available-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 150px;
+}
+
+.available-item img {
+  max-height: 200%;
+  max-width: 200%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.available-item img:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .available-row {
+    gap: 28px 36px;
+  }
+
+  .available-item {
+    height: 48px;
+    width: 110px;
+  }
 }
 
 /* FOOTER SECTION */
